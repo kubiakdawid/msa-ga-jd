@@ -2,7 +2,7 @@
   <img src="logo.png" alt="logo" width="480"/>
 </p>
 
-# MSA  algorytm genetyczny
+# MSA — algorytm genetyczny
 
 Projekt zaliczeniowy. Implementacja GA dla problemu Multiple Sequence Alignment.
 
@@ -19,18 +19,35 @@ Bierze zestaw sekwencji DNA i stara się je jak najlepiej dopasować do siebie -
 
 ```
 msa_ga/
-├── msa.py        # reprezentacja + funkcja celu SP
-├── ga.py         # algorytm genetyczny
-├── generator.py  # generator instancji testowych
-├── main.py       # eksperymenty i wykresy
-└── report/       # generowane automatycznie
+├── msa.py         # reprezentacja + funkcja celu SP
+├── ga.py          # algorytm genetyczny
+├── generator.py   # generator instancji + wczytywanie sekwencji z pliku
+├── main.py        # eksperymenty podstawowe + tabela wyników
+├── tuning.py      # testy parametrów, klasy trudności, wykresy zbieżności
+├── example.txt    # przykładowe sekwencje wejściowe
+└── report/        # generowane automatycznie (wykresy, tabela)
 ```
 
 ## Uruchomienie
 
 ```bash
 pip install numpy matplotlib
+```
+
+Eksperymenty podstawowe (tabela wyników w `report/`):
+
+```bash
 python main.py
 ```
 
-Generuje wykresy zbieżności i tabelę wyników w `report/`.
+Dopasowanie własnych sekwencji z pliku (jedna sekwencja na linię):
+
+```bash
+python main.py example.txt
+```
+
+Testy parametrów, klasy trudności i uśrednione wykresy zbieżności:
+
+```bash
+python tuning.py
+```
