@@ -7,6 +7,9 @@
 Projekt zaliczeniowy. Implementacja GA dla problemu Multiple Sequence Alignment.
 
 ![Status](https://img.shields.io/badge/Status-W_fazie_test%C3%B3w-orange?style=flat-square)
+![Wersja](https://img.shields.io/badge/wersja-v0.1.0-blue?style=flat-square)
+> [!NOTE]
+> **Wydanie v0.1.0** — Pierwsza publiczna wersja projektu. Prosimy o zgłaszanie ewentualnych problemów ;)
 
 > [!WARNING]
 > **Harmonogram projektu:** Obecny kod jest w fazie testów. Ostateczna, zoptymalizowana wersja kodu zostanie opublikowana **08.06.2026 r.**
@@ -51,3 +54,10 @@ Testy parametrów, klasy trudności i uśrednione wykresy zbieżności:
 ```bash
 python tuning.py
 ```
+
+## Wersje
+
+### v0.1.0
+- Pierwsza publiczna wersja
+- GA dla MSA (DNA), funkcja celu sum-of-pairs
+- Testy parametrów i klasy trudności
